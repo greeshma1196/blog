@@ -1,5 +1,5 @@
 ---
-title: "HOW-DOES-THE-INTERNET-WORK"
+title: "HOW DOES THE INTERNET WORK"
 date: 2022-11-11
 ---
 
