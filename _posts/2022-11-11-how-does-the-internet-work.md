@@ -5,7 +5,7 @@ date: 2022-11-11
 
 We all know that Internet is a network of networks. It helps connect every system in the world. I can sit in my desk and request for some information and I will get it within a matter of seconds. How is it possible that a machine can retrieve information about something so random.
 
-![Internet Flowchart](../docs/assets/images/post1_img1.png)
+![Internet Flowchart]({{site.baseurl}}/docs/assets/images/post1_img1.png)
 
 When I type in "google.com" on the browser and hit enter, the browser calls an API (Application Interface Protocol) through which it sends my data and responds back with the answers I want. The question that arises here is how does the API know who to contact to get the right data back?
 
