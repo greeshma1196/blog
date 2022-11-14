@@ -11,7 +11,7 @@ When I type in "google.com" on the browser and hit enter, the browser calls an A
 
 Here the concept of IP Addresses come into play. Each and every device connected to the internet has an IP Address which they use to communicate. Google has its own IP Address and so does your device. The IP Address is retrieved through a DNS Resolution. Once the IP Address is retrieved a connection can be established to send information to and fro.
 
-![Handshake Flowchart](../docs/assets/images/post1_img2.png)
+![Handshake Flowchart]({{site.baseurl}}/docs/assets/images/post1_img2.png)
 
 This connection that lets the client and server communicate is called the TCP/IP connection. The TCP/IP connection is made possible via a concept called a "3 Way Handshake", the textbook definition of which is Client sends a Sync request to the Server, Server sends an Async and Acknowledgement back and then the Client sends an Acknowledgement. But why is this needed?
 
