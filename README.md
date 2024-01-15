@@ -5,9 +5,9 @@
   Add your open source license, GitHub uses Creative Commons Attribution 4.0 International.
 -->
 
-# GitHub Pages
+<!-- # GitHub Pages
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+_Create a site or blog from your GitHub repositories with GitHub Pages._ -->
 
 <!--
   <<< Author notes: Start of the course >>>
@@ -48,7 +48,7 @@ endstep0-->
   Encourage users to open new tabs for steps!
 -->
 
-<details id=1>
+<!-- <details id=1>
 <summary><h2>Step 1: Enable GitHub Pages</h2></summary>
 
 _Welcome to GitHub Pages and Jekyll :tada:!_
@@ -63,7 +63,7 @@ The first step is to enable GitHub Pages on this [repository](https://docs.githu
 1. Wait about _one minute_, then refresh this page for the next step.
    > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
 
-</details>
+</details> -->
 
 <!--
   <<< Author notes: Step 2 >>>
@@ -72,7 +72,7 @@ The first step is to enable GitHub Pages on this [repository](https://docs.githu
   Historic note: previous version checked for empty pull request, changed to the correct theme `minima`.
 -->
 
-<details id=2>
+<!-- <details id=2>
 <summary><h2>Step 2: Configure your site</h2></summary>
 
 _You turned on GitHub Pages! :tada:_
@@ -95,7 +95,7 @@ We need to use a blog-ready theme. For this activity, we will use a theme named 
 1. Commit your changes.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+</details> -->
 
 <!--
   <<< Author notes: Step 3 >>>
@@ -104,7 +104,7 @@ We need to use a blog-ready theme. For this activity, we will use a theme named 
   Historic note: previous version checked the homepage content was not empty.
 -->
 
-<details id=3>
+<!-- <details id=3>
 <summary><h2>Step 3: Customize your homepage</h2></summary>
 
 _Nice work setting the theme! :sparkles:_
@@ -120,7 +120,7 @@ You can customize your homepage by adding content to either an `index.md` file o
 1. Commit your changes to the `my-pages` branch.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+</details> -->
 
 <!--
   <<< Author notes: Step 4 >>>
@@ -129,7 +129,7 @@ You can customize your homepage by adding content to either an `index.md` file o
   Historic note: previous version checked the file path. Previous version checked the front matter formatting.
 -->
 
-<details id=4>
+<!-- <details id=4>
 <summary><h2>Step 4: Create a blog post</h2></summary>
 
 _Your home page is looking great! :cowboy_hat_face:_
@@ -168,7 +168,7 @@ For more information about configuring front matter, see the [Jekyll frontmatter
 1. Commit your changes to your branch.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+</details> -->
 
 <!--
   <<< Author notes: Step 5 >>>
@@ -176,7 +176,7 @@ For more information about configuring front matter, see the [Jekyll frontmatter
   Define terms and link to docs.github.com.
 -->
 
-<details id=5>
+<!-- <details id=5>
 <summary><h2>Step 5: Merge your pull request</h2></summary>
 
 _Nice work, friend :heart:! People will be reading your blog in no time!_
@@ -189,14 +189,14 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
 1. Delete the branch `my-pages` (optional).
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+</details> -->
 
 <!--
   <<< Author notes: Finish >>>
   Review what we learned, ask for feedback, provide next steps.
 -->
 
-<details id=X open>
+<!-- <details id=X open>
 <summary><h2>Finish</h2></summary>
 
 _Congratulations friend, you've completed this course!_
@@ -220,15 +220,15 @@ Here's a recap of all the tasks you've accomplished in your repository:
 - [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
-</details>
+</details> -->
 
 <!--
   <<< Author notes: Footer >>>
   Add a link to get support, GitHub status page, code of conduct, license link.
 -->
 
----
+<!-- ---
 
 Get help: [Post in our discussion board](https://github.com/skills/.github/discussions) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
-&copy; 2022 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
+&copy; 2022 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode) -->
