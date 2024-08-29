@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>How Does The Internet Work | blog</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="How Does The Internet Work" />
+<meta name="author" content="Greeshma Mathew" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="We all know that Internet is a network of networks. It helps connect every system in the world. I can sit in my desk and request for some information and I will get it within a matter of seconds. How is it possible that a machine can retrieve information about something so random." />
+<meta property="og:description" content="We all know that Internet is a network of networks. It helps connect every system in the world. I can sit in my desk and request for some information and I will get it within a matter of seconds. How is it possible that a machine can retrieve information about something so random." />
+<link rel="canonical" href="http://localhost:4000/2022/11/11/how-does-the-internet-work.html" />
+<meta property="og:url" content="http://localhost:4000/2022/11/11/how-does-the-internet-work.html" />
+<meta property="og:site_name" content="blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-11T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How Does The Internet Work" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Greeshma Mathew"},"dateModified":"2022-11-11T00:00:00+01:00","datePublished":"2022-11-11T00:00:00+01:00","description":"We all know that Internet is a network of networks. It helps connect every system in the world. I can sit in my desk and request for some information and I will get it within a matter of seconds. How is it possible that a machine can retrieve information about something so random.","headline":"How Does The Internet Work","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/11/11/how-does-the-internet-work.html"},"url":"http://localhost:4000/2022/11/11/how-does-the-internet-work.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="blog" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Greeshma Mathew</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/resume/">Resume</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">How Does The Internet Work</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2022-11-11T00:00:00+01:00" itemprop="datePublished">
+        Nov 11, 2022
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>We all know that Internet is a network of networks. It helps connect every system in the world. I can sit in my desk and request for some information and I will get it within a matter of seconds. How is it possible that a machine can retrieve information about something so random.</p>
+
+<p><img src="/docs/assets/images/post1_img1.png" alt="Internet Flowchart" /></p>
+
+<p>When I type in “google.com” on the browser and hit enter, the browser calls an API (Application Interface Protocol) through which it sends my data and responds back with the answers I want. The question that arises here is how does the API know who to contact to get the right data back?</p>
+
+<p>Here the concept of IP Addresses come into play. Each and every device connected to the internet has an IP Address which they use to communicate. Google has its own IP Address and so does your device. The IP Address is retrieved through a DNS Resolution. Once the IP Address is retrieved a connection can be established to send information to and fro.</p>
+
+<p><img src="/docs/assets/images/post1_img2.png" alt="Handshake Flowchart" /></p>
+
+<p>This connection that lets the client and server communicate is called the TCP/IP connection. The TCP/IP connection is made possible via a concept called a “3 Way Handshake”, the textbook definition of which is Client sends a Sync request to the Server, Server sends an Async and Acknowledgement back and then the Client sends an Acknowledgement. But why is this needed?</p>
+
+<p>Client needs to check if a Server with the said IP Address exists. If the server does exist it responds back saying “hey! yeah I am here”. But this is where it also establishes how data will be transferred. Data transfer takes place through packets. This is because a machine cannot understand plain text, it only understands bytes of data. The plain text that we type in is converted to bytes and transferred using packets. There can be multiple packets sent across. How does the client understand how many packets it needs to retrieve.</p>
+
+<p>Here the concept of serialization comes to play. Packets are always sent in an ordered manner. Say for example, the Server sends a packet numbered 2, the next packet has to be 3, so on and so forth. So the Acknowledgment that Server sends the Client, it basically says that “Hey! I am going to be sending packets that are numbered from X”. The Client understands this and responds back saying “I am also going to be sending packets numbered from Y”.</p>
+
+<p>There is another reason why serialization is needed. When you look up for anything on the internet, it can go to multiple places before it reaches back to you with the information. When it goes to multiple places there is a probability that some packet goes missing. Suppose the Client only receives packets 2, 4 and 6, it knows that it is missing packets 3 and 5 because packets are always numbered serially. This way the Client can hit back at the server and request packets 3 and 5, and the Server will send back the requested packets.</p>
+
+<p>Once these said rules are established, then a decision is made as to the information that is going to be sent back to the user will it be in HTTP format or in HTTPS format.</p>
+
+<p>HTTP refers to Hypertext Transfer Protocol and HTTPS refers to Hypertext Transfer Protocol Secure. By looking at the names we can come to a conclusion that HTTPS is a more secured address. If the response is just an HTTP address, the information is sent back to the user in plain text format. But what happens if a secured connection needs to be established?</p>
+
+<p>Since HTTPS is secured, the data needs to be encrypted before it is sent to the client. For a secured connection we have a concept called TLS Handshake in place. It is an updated version of SSL Handshake. During the TLS Handshake there are two major steps that take place:</p>
+
+<ol>
+  <li>Asymmetric Encryption</li>
+  <li>Symmetric Encryption</li>
+</ol>
+
+<p>If we need to encrypt any text, to decrypt it back we need to know how the encryption had taken place. Machines do this through a secret key. The Client pings the Server and starts the handshake with a hello. The server responds back saying “Hey, this is the certificate of proof of server”. The Client verifies this given certificate and confirms that the server is who they say they are and that the client is interacting with the actual owner of the domain. The server sends the “premaster secret” which is encrypted with the public key and the server can only decrypt it, as the server only has the access to the private key. The server decrypts the message, then both the client and server generate sessions keys which will be the same for the both following the given standards. Once the session keys are generated the both send messages saying they are ready using the “session keys”. This entire connection that was established refers to asymmetric encryption.</p>
+
+<p>Once this connectivity is established the client and server communicate through a symmetric encryption. This is because symmetric encryption is faster to compute compared to asymmetric encryption. The reason why both of them exist is because once asymmetric encryption has been achieved, it is very hard for a human with their system to decrypt it. We need a lot of servers to decrypt the secret key. This is how a secured connection is established.</p>
+
+  </div><a class="u-url" href="/2022/11/11/how-does-the-internet-work.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <!-- <p class="feed-subscribe">
+          <a href="http://localhost:4000/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p> -->
+        <ul class="contact-list">
+          <li class="p-name">Greeshma Mathew</li>
+          <li><a class="u-email" href="mailto:greeshma.mathew@gmail.com">greeshma.mathew@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Repository for my technical blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/greeshma1196" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.linkedin.com/in/greeshma-mathew/" target="_blank" title="linkedin">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#linkedin"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
