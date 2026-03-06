@@ -1,13 +1,9 @@
-<!-- ---
-author:
-  name: Greeshma Ann Mathew
-  email: greeshma.mathew@gmail.com
-minima:
-  skin: dark
-  social_links:
-    - { platform: github, user_url: https://github.com/greeshma1196 }
-    - {
-        platform: linkdin,
-        user_url: https://www.linkedin.com/in/greeshma-mathew/,
-      }
---- -->
+---
+layout: home
+list_title: Recent Posts
+---
+
+<div class="intro-section">
+  <h2>Hey, I'm Greeshma!</h2>
+  <p>Software engineer passionate about growth, experimentation, and continuous learning. This blog is where I dive deep into new concepts, share projects, and document my journey in tech.</p>
+</div>

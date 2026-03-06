@@ -1,11 +1,18 @@
+title: Greeshma Mathew
+description: "A software engineer's blog — exploring new concepts, experiments, and personal growth."
 author:
   name: Greeshma Mathew
   email: "greeshma.mathew@gmail.com"
 theme: minima
 minima:
+  skin: auto
   social_links:
     - { platform: github, user_url: "https://github.com/greeshma1196" }
     - {
         platform: linkedin,
         user_url: "https://www.linkedin.com/in/greeshma-mathew/",
       }
+show_excerpts: true
+exclude:
+  - CLAUDE.md
+  - work_log/

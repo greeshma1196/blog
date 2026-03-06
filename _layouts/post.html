@@ -11,12 +11,16 @@ layout: base
         {{ page.date | date: date_format }}
       </time>
       {%- if page.modified_date -%}
-        ~ 
+        ~
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
+      {%- assign words = content | number_of_words -%}
+      {%- assign minutes = words | divided_by: 200 -%}
+      {%- if minutes < 1 -%}{%- assign minutes = 1 -%}{%- endif -%}
+      <span class="reading-time">{{ minutes }} min read</span>
       {%- if page.author -%}
         • {% for author in page.author %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -24,6 +28,13 @@ layout: base
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {%- endif -%}</p>
+    {%- if page.tags.size > 0 -%}
+      <div class="post-tags">
+        {%- for tag in page.tags -%}
+          <span class="post-tag">{{ tag }}</span>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

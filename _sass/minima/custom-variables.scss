@@ -1,1 +1,55 @@
-// Placeholder to allow overriding predefined variables smoothly.
+// Bold & Colorful Theme — Variable Overrides
+
+// Typography
+$base-font-family: "Space Grotesk", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$base-line-height: 1.7;
+
+// Light mode colors
+$lm-brand-color:           #FF6B6B;
+$lm-brand-color-light:     #FFB3B3;
+$lm-brand-color-dark:      #E04545;
+
+$lm-site-title-color:      #2D2D2D;
+
+$lm-text-color:            #2D2D2D;
+$lm-background-color:      #FFF8F0;
+$lm-code-background-color: #FFF0E0;
+
+$lm-link-base-color:       #E04545;
+$lm-link-visited-color:    #C23A3A;
+$lm-link-hover-color:      #FF6B6B;
+
+$lm-border-color-01:       #F0E0D0;
+$lm-border-color-02:       #E8D5C4;
+$lm-border-color-03:       #E04545;
+
+$lm-table-text-color:      #4A4A4A;
+$lm-table-zebra-color:     #FFF3E8;
+$lm-table-header-bg-color: #FFEDE0;
+$lm-table-header-border:   #F0D5C0;
+$lm-table-border-color:    #F0E0D0;
+
+// Dark mode colors
+$dm-brand-color:           #FF8A8A;
+$dm-brand-color-light:     #FFB3B3;
+$dm-brand-color-dark:      #CC5555;
+
+$dm-site-title-color:      #F0E6E0;
+
+$dm-text-color:            #CDD6F4;
+$dm-background-color:      #1E1E2E;
+$dm-code-background-color: #2A2A3E;
+
+$dm-link-base-color:       #FF8A8A;
+$dm-link-visited-color:    #FF8A8A;
+$dm-link-hover-color:      #FFB3B3;
+
+$dm-border-color-01:       #3A3A4E;
+$dm-border-color-02:       #4A4A5E;
+$dm-border-color-03:       #FF8A8A;
+
+$dm-table-text-color:      #CDD6F4;
+$dm-table-zebra-color:     #252535;
+$dm-table-header-bg-color: #2A2A3E;
+$dm-table-header-border:   #3A3A4E;
+$dm-table-border-color:    #3A3A4E;

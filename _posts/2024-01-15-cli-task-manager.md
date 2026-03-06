@@ -1,6 +1,7 @@
 ---
 title: "CLI Task Manager using Go"
 date: 2024-01-15
+tags: [go, cli, projects]
 ---
 
 Today I decided to get my feet wet and try Go programming language. I took the idea from [Gophercises](https://github.com/gophercises/task) and decided to implement a CLI Task Manager App in Go. My hands on experience are with JavaScript, Python and C++, so I barely knew anything about Golang before I started.

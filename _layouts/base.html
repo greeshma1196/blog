@@ -15,6 +15,29 @@
 
     {%- include footer.html -%}
 
+    <script>
+      function toggleTheme() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = (current === 'dark') ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateToggleIcon(next);
+      }
+
+      function updateToggleIcon(theme) {
+        var icons = document.querySelectorAll('.theme-icon');
+        icons.forEach(function(icon) {
+          icon.textContent = (theme === 'dark') ? '\u2600\uFE0F' : '\uD83C\uDF19';
+        });
+      }
+
+      (function() {
+        var theme = document.documentElement.getAttribute('data-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        updateToggleIcon(theme);
+      })();
+    </script>
   </body>
 
 </html>

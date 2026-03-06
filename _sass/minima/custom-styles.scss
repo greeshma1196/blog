@@ -1,2 +1,242 @@
-// Placeholder to allow defining custom styles that override everything else.
-// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+// Bold & Colorful Theme — Custom Styles
+
+// ---- Dark mode via data-theme attribute ----
+:root[data-theme="dark"] {
+  --minima-brand-color: #FF8A8A;
+  --minima-brand-color-light: #FFB3B3;
+  --minima-brand-color-dark: #CC5555;
+  --minima-site-title-color: #F0E6E0;
+  --minima-text-color: #CDD6F4;
+  --minima-background-color: #1E1E2E;
+  --minima-code-background-color: #2A2A3E;
+  --minima-link-base-color: #FF8A8A;
+  --minima-link-visited-color: #FF8A8A;
+  --minima-link-hover-color: #FFB3B3;
+  --minima-border-color-01: #3A3A4E;
+  --minima-border-color-02: #4A4A5E;
+  --minima-border-color-03: #FF8A8A;
+  --minima-table-text-color: #CDD6F4;
+  --minima-table-zebra-color: #252535;
+  --minima-table-header-bg-color: #2A2A3E;
+  --minima-table-header-border: #3A3A4E;
+  --minima-table-border-color: #3A3A4E;
+}
+
+:root[data-theme="light"] {
+  --minima-brand-color: #FF6B6B;
+  --minima-brand-color-light: #FFB3B3;
+  --minima-brand-color-dark: #E04545;
+  --minima-site-title-color: #2D2D2D;
+  --minima-text-color: #2D2D2D;
+  --minima-background-color: #FFF8F0;
+  --minima-code-background-color: #FFF0E0;
+  --minima-link-base-color: #E04545;
+  --minima-link-visited-color: #C23A3A;
+  --minima-link-hover-color: #FF6B6B;
+  --minima-border-color-01: #F0E0D0;
+  --minima-border-color-02: #E8D5C4;
+  --minima-border-color-03: #E04545;
+  --minima-table-text-color: #4A4A4A;
+  --minima-table-zebra-color: #FFF3E8;
+  --minima-table-header-bg-color: #FFEDE0;
+  --minima-table-header-border: #F0D5C0;
+  --minima-table-border-color: #F0E0D0;
+}
+
+// ---- Site Header ----
+.site-header {
+  border-top: 4px solid #FF6B6B;
+  border-bottom: 1px solid var(--minima-border-color-01);
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+
+  &, &:visited {
+    color: var(--minima-site-title-color);
+  }
+}
+
+.page-link {
+  font-weight: 500;
+}
+
+// ---- Intro Section ----
+.intro-section {
+  background: linear-gradient(135deg, #FF6B6B15, #4ECDC415);
+  border-radius: 12px;
+  padding: 2rem 2rem 1.5rem;
+  margin-bottom: 2.5rem;
+  border-left: 4px solid #FF6B6B;
+
+  h2 {
+    margin-top: 0;
+    font-weight: 700;
+    color: var(--minima-text-color);
+  }
+
+  p {
+    margin-bottom: 0;
+    color: var(--minima-text-color);
+    opacity: 0.85;
+  }
+}
+
+:root[data-theme="dark"] .intro-section {
+  background: linear-gradient(135deg, #FF6B6B10, #4ECDC410);
+}
+
+// ---- Post List Heading ----
+.post-list-heading {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+// ---- Post Cards ----
+.post-list {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.post-card {
+  border-left: 4px solid #4ECDC4;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--minima-background-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  &:nth-child(even) {
+    border-left-color: #FF6B6B;
+  }
+
+  &:nth-child(3n) {
+    border-left-color: #FFE66D;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+
+    .post-link {
+      text-decoration: none;
+      color: var(--minima-text-color);
+
+      &:hover {
+        color: #FF6B6B;
+      }
+    }
+  }
+}
+
+:root[data-theme="dark"] .post-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.post-card-content {
+  .post-meta {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// ---- Reading Time ----
+.reading-time {
+  &::before {
+    content: " · ";
+  }
+}
+
+// ---- Post Tags ----
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.post-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 20px;
+  text-transform: lowercase;
+  color: #fff;
+  background: #4ECDC4;
+
+  &:nth-child(even) {
+    background: #FF6B6B;
+  }
+
+  &:nth-child(3n) {
+    background: #E0A030;
+  }
+}
+
+:root[data-theme="dark"] .post-tag {
+  opacity: 0.9;
+}
+
+// ---- Post Excerpt ----
+.post-excerpt {
+  color: var(--minima-text-color);
+  opacity: 0.75;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+// ---- Dark Mode Toggle ----
+.dark-mode-toggle {
+  background: none;
+  border: 2px solid var(--minima-border-color-01);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0.35rem 0.5rem;
+  font-size: 1.15rem;
+  line-height: 1;
+  color: var(--minima-text-color);
+  transition: border-color 0.2s ease;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+
+  &:hover {
+    border-color: #FF6B6B;
+  }
+}
+
+// ---- Footer ----
+.site-footer {
+  border-top: 1px solid var(--minima-border-color-01);
+}
+
+// ---- Post Page Tweaks ----
+.post-title {
+  font-weight: 700;
+}
+
+// ---- Mobile Adjustments ----
+@media screen and (max-width: 600px) {
+  .intro-section {
+    padding: 1.25rem 1.25rem 1rem;
+  }
+
+  .post-card {
+    padding: 1rem;
+  }
+}
