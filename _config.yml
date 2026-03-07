@@ -16,3 +16,4 @@ show_excerpts: true
 exclude:
   - CLAUDE.md
   - work_log/
+  - personas/

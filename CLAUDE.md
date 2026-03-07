@@ -32,6 +32,7 @@ Personal blog/portfolio site for Greeshma Mathew, built with Jekyll and hosted o
   1. Review the entire session and update the current iteration doc (`work_log/dd-mm-yy/iteration-N.md`) with all changes made.
   2. Create a git commit message summarizing the changes in 50 words or fewer.
 - **Planning next iteration:** When the user says "lets plan for next iteration", create a new file under the current date folder: `work_log/dd-mm-yy/iteration-{N+1}.md`.
+- **Branching:** Each iteration uses its own git branch named `dd-mm-yy-iteration-N` (e.g., `06-03-26-iteration-1`).
 
 ## Notes
 
